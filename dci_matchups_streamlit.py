@@ -2,14 +2,17 @@ import streamlit as st
 import pandas as pd
 
 st.set_page_config(layout="wide")
-st.markdown(
+
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
+st.markdown(hide_github_icon,
             """
             <style>
             [data-testid="stElementToolbar"] {
                 display: none;
-            },
-            #GithubIcon {
-              visibility: hidden;
             }
             </style>
             """,
