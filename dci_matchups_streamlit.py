@@ -7,6 +7,9 @@ st.markdown(
             <style>
             [data-testid="stElementToolbar"] {
                 display: none;
+            },
+            #GithubIcon {
+              visibility: hidden;
             }
             </style>
             """,
