@@ -1,6 +1,6 @@
 [theme]
 #base="light"
-primaryColor="#dark red"
+primaryColor="dark red"
 backgroundColor="#e6e6e6"
 secondaryBackgroundColor="#ffffff"
-textColor="#11364d"
+textColor="dark red"
