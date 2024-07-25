@@ -22,12 +22,15 @@ st.markdown("""
         )
 
 data = pd.read_csv('dci_historic.csv')
+max_year = str(data['Year'].iloc[0])
+min_year = str(data['Year'].iloc[-1])
 corps_list = sorted(list(set(list(data['Corps']))))
 #class_list = sorted(list(set(list(data['Class']))))
 st.title("DCI Historical Matchups App")
 st.write("This app allows you to view historic matchup data between two corps in Drum Corps International competition. After selecting two corps in the dropdowns below, you will see information about on the last time that each corps beat each other in head to head competition at the same show.")
-
+st.write('Currently, the app contains scores from the', min_year, 'to the', max_year, 'seasons')
 row_input = st.columns((1,2))
+
 with row_input[0]:
     #class_ = st.radio('Select the class of both corps', ['World/Div 1', )
     corps1 = st.selectbox('Select Corps 1', corps_list, placeholder='', index=None)
