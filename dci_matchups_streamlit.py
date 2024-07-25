@@ -4,7 +4,7 @@ import pandas as pd
 st.set_page_config(layout="wide")
 
 hide_github_icon = """
-GithubIcon {
+#MainMenu {
   visibility: hidden;
 }
 """
