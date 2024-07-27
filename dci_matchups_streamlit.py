@@ -8,9 +8,7 @@ st.markdown(
             [data-testid="stElementToolbar"] {
                 display: none;
             },
-            #GithubIcon {
-              visibility: hidden;
-            }
+            footer {visibility: hidden;}
             </style>
             """,
             unsafe_allow_html=True
